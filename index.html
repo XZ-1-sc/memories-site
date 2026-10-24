@@ -1,7 +1,39 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080912"><meta name="description" content="在星光里，打开一段回忆。"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23eee6dc' d='m16 0 3 13 13 3-13 3-3 13-3-13L0 16l13-3z'/%3E%3C/svg%3E"><title>回忆</title>  <script type="module" crossorigin src="/memories-site/assets/index-BoJbzOqi.js"></script>
-  <link rel="stylesheet" crossorigin href="/memories-site/assets/index-BvxEusJr.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05060e">
+  <meta name="description" content="回忆，在星光中慢慢浮现。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='none' stroke='%23eee6dc' stroke-width='2' d='m16 3 4 9 9 4-9 4-4 9-4-9-9-4 9-4z'/%3E%3C/svg%3E">
+  <title>回忆 · 星空相册</title>
+  <script type="module" crossorigin src="/memories-site/assets/index-D4mMgo6y.js"></script>
+  <link rel="stylesheet" crossorigin href="/memories-site/assets/index-BNn4TvBV.css">
 </head>
-<body><div id="app"></div></body>
+<body>
+  <main class="memory-page" aria-label="回忆星空相册">
+    <div class="visual-layer">
+      <img class="portrait-art" alt="" draggable="false">
+
+    </div>
+    <canvas class="star-space" aria-hidden="true"></canvas>
+    <header class="brand">
+      <svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="m14 3 3.3 7.7L25 14l-7.7 3.3L14 25l-3.3-7.7L3 14l7.7-3.3L14 3Z"/></svg>
+      <span>回忆</span>
+    </header>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">MEMORIES</p>
+      <h1 id="page-title">回忆</h1>
+      <span class="quiet-rule" aria-hidden="true"></span>
+      <p class="gesture-hint">拖动旋转 · 滚轮或双指缩放 <span>·</span> 轻触打开回忆</p>
+    </section>
+    <footer class="page-footer">
+      <p class="memory-total"><span id="memory-count"></span><span class="count-label">段回忆</span></p>
+      <div class="scene-controls">
+        <button class="motion-toggle" type="button" aria-label="暂停星光" aria-pressed="false"><span class="pause-icon" aria-hidden="true"></span><span class="motion-label">暂停星光</span></button>
+        <button class="reset-view" type="button"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M5.8 7a7.5 7.5 0 0 1 12.4-1L20 8M4 16l1.8 2A7.5 7.5 0 0 0 18.2 17"/></svg><span>复位视角</span></button>
+      </div>
+    </footer>
+  </main>
+</body>
 </html>
